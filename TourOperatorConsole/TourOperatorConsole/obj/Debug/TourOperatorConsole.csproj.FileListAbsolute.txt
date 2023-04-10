@@ -1,0 +1,7 @@
+C:\Users\USER\Desktop\Alice 4E\2° QUADRIMESTRE\TourOperatorConsole\TourOperatorConsole\bin\Debug\TourOperatorConsole.exe.config
+C:\Users\USER\Desktop\Alice 4E\2° QUADRIMESTRE\TourOperatorConsole\TourOperatorConsole\bin\Debug\TourOperatorConsole.exe
+C:\Users\USER\Desktop\Alice 4E\2° QUADRIMESTRE\TourOperatorConsole\TourOperatorConsole\bin\Debug\TourOperatorConsole.pdb
+C:\Users\USER\Desktop\Alice 4E\2° QUADRIMESTRE\TourOperatorConsole\TourOperatorConsole\obj\Debug\TourOperatorConsole.csproj.AssemblyReference.cache
+C:\Users\USER\Desktop\Alice 4E\2° QUADRIMESTRE\TourOperatorConsole\TourOperatorConsole\obj\Debug\TourOperatorConsole.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\Alice 4E\2° QUADRIMESTRE\TourOperatorConsole\TourOperatorConsole\obj\Debug\TourOperatorConsole.exe
+C:\Users\USER\Desktop\Alice 4E\2° QUADRIMESTRE\TourOperatorConsole\TourOperatorConsole\obj\Debug\TourOperatorConsole.pdb
