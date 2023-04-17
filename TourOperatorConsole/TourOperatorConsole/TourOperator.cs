@@ -46,9 +46,9 @@ namespace TourOperatorConsole
             //la parte numerica passa quidi al valore di 000
             if(numero == 1000)
             {
-                if (lettera == 'A')//se il numero è uguale a 1000 e la lettera uguale ad A genero un'eccezione
+                if (lettera == 'Z')//se il numero è uguale a 1000 e la lettera uguale ad A genero un'eccezione
                     throw new Exception("Limite codici raggiunto");
-                lettera--;
+                lettera++;
                 tmpNumero = "000";
             }
             else
