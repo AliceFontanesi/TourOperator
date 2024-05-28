@@ -1,90 +1,92 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- Bootstrap CSS -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <title>Documentazione TourOperator</title>
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-1" style="background-color: rgb(98, 239, 227);"></div>
-            <div class="col-lg-10">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-3" style="background-color: black;">
-                        </br>
-                            <h4 style="text-align: center; color: mintcream;">Menù</h4>
-                            <ul style="color: white;">
-                                <li><a href="index.html">Homepage</a></br></li>
-                                <li><a href="codiceConsumer.html">Codice consumer</a></br></li>
-                                <li><a href="classe.html">Classe </a></br></li>
-                            </ul>
-                            <h6 style="color: white; text-align: center;">Interfacce e implementazione</h6>
-                            <ul style="color: white;">
-                                <li>IDictionary</br></li>
-                                <li><a href="IContainer.html">IContainer</a></br></li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-9">
-                        </br></br></br>
-                        <div><h1>Interfaccia IDictionary e implementazione</h1></div>
-                        </br></br></br>
-                            <p>Interfaccia:</p>
-                            <img style="width: 50%; height: auto;" src="intDic.png">
-                            </br></br><p>Implementazione interfaccia:</p>
-                            <img style="width: 100%; height: auto;" src="implDic.png">
-                            <p>
-                            </br>Nel metodo insert istanzio un oggetto di tipo Client e uno di tipo Coppia.</br>
-                            Con un foreach scorro il contenuto del dizionario e controllo se esiste già un cliente con codice uguale a quello passato come parametro.</br>
-                            Nel caso in un quest'ultimo sia presente sostituisco le informazioni, altrimenti inserisco il nuovo cliente in coda.</br>
-                            </p>
-                            <img style="width: 100%; height: auto;" src="implDic2.png">
-                            <p>
-                            </br>All'interno del metodo find controllo se esite un cliente con codice uguale a quello passato come parametro.
-                            Se esiste ritorno le informazioni nel formato nome:destinazione, altrimenti genero un'eccezione.
-
-                            </br></br>All'interno del metodo remove rimuovo il cliente con codice uguale a quello passato come parametro. Se il cliente non esiste genero un'eccezione.
-                            </p>
-                        </br>
-                        <a href="index.html"><button>Torna indietro</button></a>
-                    </br></br>
-                        </div>
-                    </div>
-                </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">TourOperator</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Homepage</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="codiceConsumer.html">Codice consumer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="classe.html">Classe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="IDictionary.html">IDictionary</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="IContainer.html">IContainer</a>
+                    </li>
+                </ul>
             </div>
-            <div class="col-lg-1" style="background-color: rgb(98, 239, 227);"></div>
         </div>
-    </div>    
-    <footer>
-        <div class="container-fluid" style="background-color: lightslategray">
-            <div class="row" style="text-align: center;">
-                <div class="col-lg-2"></div>
-                <div class="col-lg-3" >
-                </br>
+    </nav>
+    <div class="container my-4">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 content-section">
+                <h2>Interfaccia IDictionary e implementazione</h2>
+                <p>Interfaccia:</p>
+                <img class="img-fluid mb-3" src="intDic.png" alt="Interfaccia IDictionary">
+                <p>Implementazione interfaccia:</p>
+                <img class="img-fluid mb-3" src="implDic.png" alt="Implementazione IDictionary">
+                <p>
+                    Nel metodo insert istanzio un oggetto di tipo Client e uno di tipo Coppia.
+                    Con un foreach scorro il contenuto del dizionario e controllo se esiste già un cliente con codice uguale a quello passato come parametro.
+                    Nel caso in cui quest'ultimo sia presente sostituisco le informazioni, altrimenti inserisco il nuovo cliente in coda.
+                </p>
+                <img class="img-fluid mb-3" src="implDic2.png" alt="Implementazione IDictionary parte 2">
+                <p>
+                    All'interno del metodo find controllo se esiste un cliente con codice uguale a quello passato come parametro.
+                    Se esiste, ritorno le informazioni nel formato nome:destinazione, altrimenti genero un'eccezione.
+                </p>
+                <p>
+                    All'interno del metodo remove rimuovo il cliente con codice uguale a quello passato come parametro. Se il cliente non esiste, genero un'eccezione.
+                </p>
+                <a href="index.html" class="btn btn-primary">Torna indietro</a>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-4">
                     <h4>Contatti</h4>
-                    <p>Alice Fontanesi
-                    </br>mail: fontanesi.alice@iisviolamarchesini.edu.it</p>
+                    <p>Alice Fontanesi<br>
+                    mail: fontanesi.alice@iisviolamarchesini.edu.it</p>
                 </div>
-                <div class="col-lg-3">
-                </br>
+                <div class="col-lg-4">
                     <h4>Sede</h4>
-                    <p>ITIS Viola Marchesini</br>
-                        Via Alcide de Gasperi, 21, </br>
-                        45100 Rovigo RO</p>
+                    <p>ITIS Viola Marchesini<br>
+                    Via Alcide de Gasperi, 21<br>
+                    45100 Rovigo RO</p>
                 </div>
-                <div class="col-lg-2">
-                </br>
+                <div class="col-lg-4">
                     <h4>Informazioni</h4>
-                    <p>Studentessa di informatica</br> Classe: 4E</p>
+                    <p>Studentessa di informatica<br>Classe: 4E</p>
                 </div>
-                <div class="col-lg-2"></div>
             </div>
         </div>
-    </footer>   
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXlY5nFdZhJ6Vd3p2Q4yFXpbtHb7U4kx6Ll9VV7S6vfMRdKAG8eVok1vr4gt" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-pzjw8f+ua7Kw1TIq10U6K3G6zZw5yNG12+cw5Hf5r1R8l0jFL5+tF5g5+3boFF7j" crossorigin="anonymous"></script>
 </body>
 </html>
